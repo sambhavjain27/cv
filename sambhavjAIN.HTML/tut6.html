@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Link</title>
+    <style>
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(29, 210, 65);
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                /* background-color: rgb(55, 224, 215); */
+            }
+        }
+
+        .zero {
+            display: grid;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: black;
+            border-radius: 60px;
+        }
+        .one{
+            color: white;
+        }
+
+        #two {
+            padding: 0px 30px;
+            cursor: pointer;
+
+        }
+
+        #two:hover {
+            background-color:white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .rr {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 2fr 2fr 2fr;
+            padding: 40px;
+
+        }
+
+        .three {
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .tt {
+            /* border: 2px solid black; */
+            margin: 10px;
+        }
+
+        #uu {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+
+        }
+        .ii{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 6rem;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        #oo{
+            /* border: 2px solid black; */
+        }
+        #pp{
+            /* border: 2px solid black; */
+        }
+        #name{
+            margin: 10px 30px;
+            /* font-size: 20px; */
+        
+        }
+        #class{
+            margin:5px 30px;
+        }
+        #role{ 
+            margin: 5px 31px;
+        }
+        .gender{
+            padding: 5px 5px;
+            margin: 5px 5px;
+        }
+        
+        .resert{
+                 padding: 5px 5px;
+                 margin: 6px 50px;
+        }
+        #date{
+    
+            padding: 2px 5px;
+            margin: 17px 10px;
+
+        }
+        .submit{
+            padding: 5px 8px;
+            margin: 9px 10px;
+        }
+        #pp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .sam{
+            margin: 10px 10px;
+            /* padding: 5PX 5px; */
+            border: 2px  black;
+            border-radius: 7px;
+             box-shadow: 5px 5px 5px 5px black;
+        } 
+        #kaku{
+            margin: 5px 5px;
+            padding: 5PX 5px;
+
+        }
+        body{
+            /* text-shadow: 10px 10px 9px black; */
+            font-style: italic !important;
+        }
+        #anu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-style: italic;
+            animation-name:sam2;
+        }
+        .bika{
+            margin: 40px 100px;
+            border: 2px black;
+            border-radius: 12px;
+            box-shadow: 5px 5px 5px 5px black;
+            position: relative;
+            animation-name: sam2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+        
+        }
+        @keyframes sam2{
+            form{
+                  width: 200px;
+            }
+            to{
+                 width: 220px;
+            }
+        }
+        .sampan{
+            display: grid;
+            border: 2px solid black;
+            height: 300px;
+            background-image:url(sam.webp) ;
+            color:white;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        #spp{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .paras{
+            color: steelblue;
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .qqq{
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-areas:'navbar navbar section section' ;
+    
+            
+            
+        }
+        #www{
+         grid-area: navbar;
+         padding:  0px 150px;
+         margin: 40px 9px;
+        }
+        #eee{
+            grid-area: section;
+            padding: 20px -20px; 
+        }
+        .zzz{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #xxx{
+            border: 2px solid rgb(23, 22, 22);
+            margin:  10px 130px;
+            padding: 10px 10px;
+            border-radius: 20px;
+            font-size: large;
+            background-color: skyblue;
+            cursor: pointer;
+            
+        }
+        .ccc{
+            border: 2px solid rgb(214, 201, 201);
+            background-color: gray;
+            height: 200px;
+            color: white;
+            display: grid;
+            grid-template-columns:repeat(4,auto);
+            justify-content: center;
+            grid-gap: 5rem;
+            cursor: pointer;
+        
+        
+        }
+        .bbb{
+            border: 2px solid rgb(225, 206, 206);
+            height: 100px;
+            background-color:grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            cursor: pointer;
+        
+        
+        }
+        .nnn{
+            margin: 25px 20px;
+            font-size: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            
+        }
+        .aaa{
+            display: flex;
+            float: right;
+            align-items: center;
+            justify-content: center;
+        }
+        #ccc{
+            border: 2px solid rgb(40, 130, 234);
+            background-color: white;
+            color:black;
+            margin: 0px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="zero">
+        <div class="one">
+            <spam id="two">Home</spam>
+            <spam id="two">Contact us</spam>
+            <spam id="two">Services</spam>
+            <spam id="two">Login in</spam>
+             
+             <button type="submit" class="aaa" id="ccc">Enter</button>
+             <span><input type="text" class="aaa" placeholder="Search hear" ></span>
+        </div>
+    </nav>
+    <div class="rr">
+        <div class="three" id="qq">
+            <h1>Paras jain</h1>
+            <img src="kaku1.jpg" alt="" class="sam" width="300px" height="170px">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, architecto consequuntur modi quos sit
+                debitis odio commodi aliquid possimus dignissimos, quo dolor animi reprehenderit quibusdam eveniet iusto
+                totam sed sint excepturi? Id, rem magni.</p><hr>
+        </div>
+        <div class="three" id="ww">
+            <h1>The trevel new world</h1>
+            <img src="kaku2.jpg" alt="" class="sam" width="300px" height="170px">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, architecto consequuntur modi quos sit
+                debitis odio commodi aliquid possimus dignissimos, quo dolor animi reprehenderit quibusdam eveniet iusto
+                totam sed sint excepturi? Id, rem magni.</p> <hr>
+        </div>
+        <div class="three" id="ee">
+            <h1>The new world is open</h1>
+            <img src="kaku5.avif" alt="" class="sam" width="270spx" height="170px">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, architecto consequuntur modi quos sit
+                debitis odio commodi aliquid possimus dignissimos, quo dolor animi reprehenderit quibusdam eveniet iusto
+                totam sed sint excepturi? Id, rem magni.</p>
+        </div>
+    </div>
+    <div class="tt">
+        <div id="yy">
+            <h1 id="uu">
+                Sattling into new world with us
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero doloremque facilis optio omnis quod
+                harum. Libero error deserunt laudantium officiis natus? Delectus explicabo quod nobis fuga eligendi
+                aliquid animi, debitis, consequuntur earum praesentium ducimus quae deserunt rerum odio ipsam? Quo,
+                voluptate. Quasi earum sit reprehenderit tenetur eos enim quaerat quo ad porro at. Quas laudantium
+                aliquam laboriosam optio excepturi iure earum facilis aliquid, explicabo voluptatibus molestias eaque
+                consequatur. Maiores ullam nihil vero alias dignissimos, incidunt at, eum asperiores eos, provident
+                illo. Sed optio quisquam sapiente quod voluptatem provident distinctio excepturi dolor? Accusamus quasi
+                architecto soluta veniam, vero animi itaque maxime sint suscipit debitis illum quisquam nostrum omnis
+                quam at aperiam. Est officia commodi tempore odio at ad quo optio molestias vitae doloremque excepturi
+                unde, perferendis explicabo dolores veritatis vero necessitatibus itaque totam ex mollitia ducimus
+                aspernatur fugiat? Iusto, officia. Commodi dolorum quibusdam ipsum cupiditate sequi, alias dolorem
+                distinctio. Error, a aut! Numquam, distinctio error? Eveniet ipsa voluptates sunt ipsum alias, tempora
+                delectus ex quia, adipisci sit maxime necessitatibus mollitia culpa? Quia perferendis possimus earum
+                autem similique modi rem deserunt magni fuga blanditiis cumque voluptatum, nemo quas eaque aperiam
+                architecto! Modi iusto eum repellat ipsa sequi, commodi earum alias omnis tempore exercitationem nihil
+                cum adipisci animi rerum, sunt, corrupti explicabo impedit autem sint delectus velit harum voluptatem.
+                Molestias ipsa voluptas quasi error optio temporibus blanditiis, dicta ea id, excepturi doloribus non
+                quos accusantium quod ab fugit corporis magni asperiores perferendis nostrum eius facere deleniti,
+                voluptates dolorum. Autem consequatur doloribus asperiores pariatur voluptas sequi nostrum optio
+                officiis nobis dicta. Sapiente ducimus alias earum cumque, praesentium, maiores cum vero libero
+                aspernatur sed animi quis quos quia maxime in aut provident molestias? A assumenda eos labore accusamus
+                nisi sed amet, expedita, nemo omnis veritatis aspernatur soluta magni beatae, dolorem quis voluptates
+                libero quaerat quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, reiciendis!</p>
+        </div>
+    </div>
+    <div class="ii">
+        
+              <form action="" id="oo">
+            Name <input type="text" id="name"><br>
+            Class <input type="number" id="class"><br>
+            Date <input type="date" id="date"><br>
+            Rolenumber <input type="number" id="role"><br>
+            Male <input type="radio"class="gender">
+            Femle <input type="radio" class="gender">
+            Other <input type="radio" class="gender"><br>
+            <input type="submit"class="submit">
+            <input type="reset" class="resert">
+            </form>
+        
+        <div id="pp">
+            <h2 id="kaku">Explore with us</h2>
+            <img src="pr1.avif" alt="" width="200px" height="200px" class="sam">
+            <img src="pr2.avif" alt="" width="200px" height="200px" class="sam">
+            <img src="pr3.avif" alt="" width="200px" height="200px" class="sam"> 
+        </div>
+    </div>
+          <div class="animate">
+                  <h2 id="anu">Star link details start hear</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui mollitia minima earum eveniet in quasi ab eum ad repellendus soluta, possimus nemo nulla iure velit beatae eaque expedita culpa. Quos fugit dicta repellat a maiores itaque? Tenetur laborum vero optio quis  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae alias sequi similique quo omnis. Quas facilis soluta quia repudiandae deleniti, molestias debitis sequi laborum alias eveniet in, laboriosam earum officia? Harum ad totam voluptatem ab fuga consequatur suscipit, eligendi delectus ipsum ullam. Ipsum quis reiciendis impedit fuga fugiat veniam nostrum tenetur accusantium aperiam sequi molestias, accusamus deleniti beatae labore, nemo minima et ullam voluptatibus laboriosam eveniet vitae natus sapiente sit. Accusantium quia eligendi odit, enim est doloremque aspernatur culpa unde consectetur asperiores expedita! Dolorum dolor non, itaque ducimus corporis praesentium soluta tempora et veniam distinctio? Ducimus dolorem nisi ipsam eum, accusamus recusandae, dicta magnam delectus illo similique, earum eos! Explicabo temporibus provident necessitatibus nam, error dolore ea ipsum numquam. Reprehenderit necessitatibus harum qui, sunt labore distinctio deleniti atque vero! Vel repellat, officia enim facere commodi placeat. Aperiam, debitis magni vero perferendis neque deserunt perspiciatis itaque repellat suscipit qui eum error nam, veniam animi officia eligendi assumenda ipsam, ducimus quod illo sit hic amet possimus aliquam? Tempore voluptate ut doloribus nulla ex excepturi sunt asperiores perferendis. Minus sequi id deserunt consectetur laudantium officiis odio cupiditate molestiae, reiciendis non autem esse a amet voluptatibus ipsum praesentium placeat asperiores, fuga pariatur illo odit?quod animi soluta asperiores voluptates. Modi commodi et maxime.</p>
+                   <img src="qq1.jpeg" alt=""  class="bika">
+                   <img src="qq2.jpeg" alt="" class="bika">
+                   <img src="qq3.jpeg" alt=""  class="bika">
+                   
+            
+          </div>
+          
+            
+          </div>
+          <div class="sampan">
+              <div id="samp">
+                  <h1 id="spp">STAR LINK</h1>
+                  <P>Space world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, non.</P>
+              </div>
+          </div>
+          <div >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto id fugit corporis quisquam quod, nihil at voluptas quis molestiae dolore quo atque molestias repudiandae eligendi maxime asperiores repellendus. Commodi nam, ducimus praesentium maxime doloremque natus nihil maiores perferendis esse inventore corporis dolorum tempora fugit vitae sit minima at earum deserunt ullam eveniet. Necessitatibus quae, at vitae qui consequatur veniam blanditiis aspernatur eligendi nesciunt quibusdam sint! Beatae voluptatibus illo aliquid placeat esse! Cupiditate libero iure aliquam et quas non reprehenderit laudantium consequuntur beatae veritatis repudiandae optio quaerat commodi, natus earum perspiciatis dolorum consequatur mollitia, est illo labore odio! Cum nihil neque culpa beatae voluptatibus optio debitis enim distinctio molestiae error iusto a suscipit assumenda, eum, aspernatur nostrum ipsa! Consectetur ducimus quia ad nobis quisquam voluptas quae quibusdam debitis? Nam aut, fugit nesciunt quasi facere ducimus! Aut expedita quis ad temporibus necessitatibus! Qui quaerat cumque voluptatum, eveniet, atque ad dolorum quos exercitationem, velit repellat mollitia laudantium quasi magnam illum accusantium maiores praesentium dignissimos aspernatur repudiandae? Consequatur, quo. Harum, ipsam aut odio voluptatem quasi odit perferendis. Dicta, sint molestias repudiandae natus minima quasi ad beatae quos. Modi, quae accusamus? Delectus eius rerum dolorem amet fugiat quia quaerat saepe tenetur vel, tempore quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit unde debitis amet repellendus excepturi asperiores alias, incidunt, quisquam vero fuga fugit neque sunt totam, non atque ab dolore impedit est distinctio accusantium quos nam dicta numquam! Numquam alias blanditiis excepturi commodi aperiam enim veritatis in. Vitae reiciendis aliquam, labore neque consequuntur iusto. Asperiores quisquam at a quae exercitationem odit minima dolores ullam id voluptas! Quidem voluptatibus ex molestiae natus. Perspiciatis modi harum unde incidunt ea voluptatum repellendus aut molestiae soluta beatae doloribus, accusamus at cumque iusto nam quaerat aliquam ipsam distinctio, eaque earum provident obcaecati. Soluta exercitationem illo recusandae veritatis neque, velit obcaecati, a dicta sequi, harum architecto earum culpa vel libero fuga aut id voluptatum! Sed dicta ab itaque excepturi quibusdam tempore odio pariatur, alias expedita. Fugiat rerum natus quo optio veritatis laboriosam non expedita aut animi beatae repudiandae, asperiores facere cum consequatur eligendi sunt debitis error, nobis aliquam ducimus quisquam aspernatur. Ut aliquam, repudiandae corrupti, itaque possimus sunt error soluta ratione tempora nulla, laborum odit omnis fugiat sequi deleniti repellat necessitatibus perferendis officia. Expedita, culpa facilis porro voluptatem, nemo laborum labore quam voluptatibus deleniti modi aut. Aspernatur quo totam ipsa nobis velit pariatur vitae veritatis, voluptatum, quidem dignissimos libero porro impedit qui voluptatibus dolorem cum consequatur ipsum molestias vero consequuntur illo eum ipsam reiciendis dolorum! Sed id, impedit, excepturi libero minus repudiandae explicabo tempore esse quibusdam fugit rem eos nulla autem amet laborum odio odit architecto? Quas nulla nobis ducimus. Ea ullam quam iusto expedita dolorum. Illo accusantium animi exercitationem laborum! In rem iusto delectus dignissimos unde! Quam veniam esse quibusdam nihil ipsum aliquid accusamus possimus sint a deserunt, est explicabo vitae eveniet dolor iure dolores exercitationem quis nulla consequuntur voluptatem earum repellendus. Facilis odit dolorem soluta impedit. Deserunt sequi ipsa harum rem non dicta inventore assumenda recusandae voluptatem fugiat at itaque, magnam voluptatibus cumque obcaecati aliquid cupiditate animi suscipit eligendi facere aspernatur? Porro sit consectetur enim adipisci sequi nam aliquam eum iure molestias vero doloremque, magnam quisquam corporis nisi perspiciatis cupiditate? Exercitationem, error! Maiores cupiditate dicta nihil laudantium. Quaerat dolore officiis provident ad, tempore unde. Modi est laborum illo rem quidem, distinctio fuga sed ullam tempora labore quia. Rem nesciunt nulla optio sint officia ipsum cum similique illum dolorem quod tempora, ipsa magni quia. At nihil odit pariatur? Vitae nostrum quam sint blanditiis accusantium velit, nulla, rerum sapiente enim voluptatem laboriosam odit. Ab omnis a cumque optio sequi magni magnam quis! Consequatur beatae qui dignissimos aut. Dolorum, temporibus, sit ducimus corporis aliquid, inventore nam aut ab totam maiores reiciendis sint ipsam. Error maxime officia quaerat debitis quas libero, fugit qui cumque dicta dolorem voluptatem voluptas aut aliquam at esse enim ad perspiciatis magni necessitatibus aperiam dolorum! Nobis beatae, neque nam iusto qui consectetur repudiandae aliquam. Unde sapiente architecto sequi eius accusamus. Quis adipisci qui quibusdam quidem voluptatum. Unde quas quaerat magni quod cum! Ratione et doloribus ipsa temporibus ad praesentium vel, iure inventore atque cumque. Dolor eaque, autem dolorum omnis tempora eius quo sit accusantium culpa quae.</p>
+          </div>
+          <div class="paras">
+              <h1>Come fly with us</h1>
+          </div>
+               <div class="qqq">
+              <div id="www">
+                  <h1 class="zzz">About us</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, inventore delectus. Delectus ratione eius eligendi accusamus, soluta excepturi molestiae itaque error sint ipsum qui officiis ex dolorum minima quas dolorem esse sit deserunt velit autem repellat aut voluptatum perspiciatis necessitatibus. Consectetur enim amet blanditiis culpa corrupti asperiores quae consequatur recusandae.</p>
+                  <button id="xxx">about us</button>
+              </div>
+              <div id="eee">
+                  <img src="sam.webp" alt="" width="800px" height="400px" class="sam">
+              </div>
+              </div>
+              <div class="ccc">
+                  <nav class="vvv">
+                      <h2>Get to know us</h2>
+                      <li>About us</li>
+                      <li>About us</li>
+                      <li>About us</li>
+                      <li>About us</li>
+                      <li>About us</li><hr>
+                  </nav>
+                  <nav class="vvv">
+                      <h2>Connect with us</h2>
+                      <li>careers</li>
+                      <li>careers</li>
+                      <li>careers</li>
+                      <li>careers</li><hr>
+                  </nav>
+                  <nav class="vvv">
+                      <h2>Make money wiyh us</h2>
+                      <li>press relases</li>
+                      <li>press relases</li>
+                      <li>press relases</li>
+                      <li>press relases</li>
+                      <li>press relases</li><hr>
+                  </nav>
+                  <nav class="vvv">
+                      <h2>Let us help you</h2>
+                      <li>Gift a smile</li>
+                      <li>Gift a smile</li>
+                      <li>Gift a smile</li>
+                      <li>Gift a smile</li>
+                      <li>Gift a smile</li>
+                      <li>Gift a smile</li><hr>
+                  </nav>
+              </div>
+              </div>
+              <footer class="bbb">
+                  <h2>brand with us:</h2>
+                  <li class="nnn">Apple</li>
+                  <li class="nnn">Realme</li>
+                  <li class="nnn">Oppo</li>
+                  <li class="nnn">Vevo</li>
+                  <li class="nnn">Oneplus</li>
+                  
+              </footer>
+        
+          
+
+
+</body>
+
+</html>
